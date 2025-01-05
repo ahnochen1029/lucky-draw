@@ -2,7 +2,7 @@
     <div id="tool">
         <el-button v-if="showStart" @click="onStart" type="primary" size="mini"> {{
             running ? '停止' : '開始抽獎'
-            }} </el-button>
+        }} </el-button>
         <el-button v-if="!running" @click="startHandler" size="mini">抽獎設置</el-button>
         <el-button v-if="!running" size="mini" @click="showRemoveoptions = true">
             重置
@@ -84,7 +84,7 @@
                         <el-radio border :label="1">重置抽獎配置</el-radio>
                         <el-radio border :label="2">重置名單</el-radio>
                         <!-- <el-radio border :label="3">重置照片</el-radio> -->
-                        <el-radio border :label="4">重置抽獎结果</el-radio>
+                        <el-radio border :label="4">重置抽獎結果</el-radio>
                     </el-radio-group>
                 </el-form-item>
                 <el-form-item>
