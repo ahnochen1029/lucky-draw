@@ -6,7 +6,6 @@ import {
     resultField,
     conversionCategoryName
 } from '@/helper/index';
-import Importphoto from './Importphoto';
 import { database, DB_STORE_NAME } from '@/helper/db';
 
 export default {
@@ -48,7 +47,6 @@ export default {
             return options;
         }
     },
-    components: { Importphoto },
     data() {
         return {
             showSetwat: false,
