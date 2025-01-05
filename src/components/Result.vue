@@ -3,7 +3,7 @@
         :append-to-body="true">
         <div class="dialog-title" slot="title">
             <span :style="{ fontSize: '18px' }">
-                抽獎结果
+                抽獎結果
             </span>
             <span :style="{ fontSize: '14px', color: '#999', marginLeft: '10px' }">
                 (點擊號碼可以刪除)
