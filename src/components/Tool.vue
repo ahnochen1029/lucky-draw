@@ -1,17 +1,18 @@
 <template>
     <div id="tool">
-        <el-button @click="startHandler" type="primary" size="mini">{{
-            running ? '停止' : '開始'
-            }}</el-button>
-        <el-button size="mini" @click="showRemoveoptions = true">
+        <el-button v-if="showStart" @click="onStart" type="primary" size="mini"> {{
+            running ? '停止' : '開始抽獎'
+            }} </el-button>
+        <el-button v-if="!running" @click="startHandler" size="mini">抽獎設置</el-button>
+        <el-button v-if="!running" size="mini" @click="showRemoveoptions = true">
             重置
         </el-button>
-        <el-button size="mini" @click="showImport = true">
+        <el-button v-if="!running" size="mini" @click="showImport = true">
             導入名單
         </el-button>
-        <el-button size="mini" @click="showImportphoto = true">
+        <!-- <el-button v-if="!running" size="mini" @click="showImportphoto = true">
             導入照片
-        </el-button>
+        </el-button> -->
         <el-dialog :append-to-body="true" :visible.sync="showSetwat" class="setwat-dialog" width="400px">
             <el-form ref="form" :model="form" label-width="80px" size="mini">
                 <el-form-item label="抽取獎項">
@@ -56,7 +57,7 @@
                 </el-form-item>
 
                 <el-form-item>
-                    <el-button type="primary" @click="onSubmit">立即抽獎</el-button>
+                    <el-button type="primary" @click="onSubmit">設置</el-button>
                     <el-button @click="showSetwat = false">取消</el-button>
                 </el-form-item>
             </el-form>
@@ -82,7 +83,7 @@
                         <el-radio border :label="0">重置全部數據</el-radio>
                         <el-radio border :label="1">重置抽獎配置</el-radio>
                         <el-radio border :label="2">重置名單</el-radio>
-                        <el-radio border :label="3">重置照片</el-radio>
+                        <!-- <el-radio border :label="3">重置照片</el-radio> -->
                         <el-radio border :label="4">重置抽獎结果</el-radio>
                     </el-radio-group>
                 </el-form-item>

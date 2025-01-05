@@ -50,24 +50,24 @@
         </transition>
 
         <el-button class="audio" type="text" @click="() => {
-                playAudio(!audioPlaying);
-            }
+            playAudio(!audioPlaying);
+        }
             ">
             <i class="iconfont" :class="[audioPlaying ? 'iconstop' : 'iconplay1']"></i>
         </el-button>
 
         <LotteryConfig :visible.sync="showConfig" @resetconfig="reloadTagCanvas" />
-        <Tool @toggle="toggle" @resetConfig="reloadTagCanvas" @getPhoto="getPhoto" :running="running"
-            :closeRes="closeRes" />
+        <Tool @toggle="toggle" @setStart="setStart" @resetConfig="reloadTagCanvas" @getPhoto="getPhoto"
+            :running="running" :closeRes="closeRes" :showStart="showStart" />
         <Result :visible.sync="showResult"></Result>
 
         <span class="copy-right">
-            Copyright©zhangyongfeng5350@gmail.com
+            Copyright©
         </span>
 
         <audio id="audiobg" preload="auto" controls autoplay loop @play="playHandler" @pause="pauseHandler">
             <source :src="audioSrc" />
-            你的浏览器不支持audio标签
+            你的瀏覽器不支援audio標籤
         </audio>
     </div>
 </template>

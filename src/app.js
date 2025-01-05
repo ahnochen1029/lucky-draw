@@ -111,6 +111,7 @@ export default {
         return {
             running: false,
             showRes: false,
+            showStart: false,
             showConfig: false,
             showResult: false,
             resArr: [],
@@ -201,8 +202,17 @@ export default {
         closeRes() {
             this.showRes = false;
         },
+        setStart(val) {
+            console.log('setStart', val)
+            this.showStart = val;
+        },
         toggle(form) {
             console.log('toggle', form)
+            if (form.category === '') {
+                this.$emit('showStart', false); // 通知 Tool.vue 更新 showStart 為 false
+                this.showStart = false;
+                console.log('this.showStart', this.showStart)
+            }
             const { speed, config } = this;
             if (this.running) {
                 this.audioSrc = bgaudio;
@@ -210,6 +220,7 @@ export default {
 
                 window.TagCanvas.SetSpeed('rootcanvas', speed());
                 this.showRes = true;
+                // this.showStart = false;
                 this.running = !this.running;
                 this.$nextTick(() => {
                     this.reloadTagCanvas();

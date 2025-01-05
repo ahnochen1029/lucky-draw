@@ -43,12 +43,6 @@ export function conversionCategoryName(key) {
         case 'firstPrize':
             name = '頭獎';
             break;
-        case 'secondPrize':
-            name = '貳獎';
-            break;
-        case 'thirdPrize':
-            name = '參獎';
-            break;
         default:
             break;
     }

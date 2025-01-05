@@ -11,7 +11,8 @@ import { database, DB_STORE_NAME } from '@/helper/db';
 export default {
     props: {
         running: Boolean,
-        closeRes: Function
+        closeRes: Function,
+        showStart: Boolean
     },
     computed: {
         config: {
@@ -50,6 +51,7 @@ export default {
     data() {
         return {
             showSetwat: false,
+            // showStart: false,
             showImport: false,
             showImportphoto: false,
             showRemoveoptions: false,
@@ -146,15 +148,29 @@ export default {
             }
             this.showSetwat = false;
             this.$emit(
+                'setStart',
+                true
+            );
+        },
+        onStart() {
+            console.log('onStart');
+            this.$emit(
                 'toggle',
                 Object.assign({}, this.form, { remain: this.remain })
             );
+            this.form = {
+                category: '',
+                mode: '',
+                qty: 0,
+                allin: false,
+            };
         },
         startHandler() {
-            this.$emit('toggle');
-            if (!this.running) {
-                this.showSetwat = true;
-            }
+            this.showSetwat = true;
+            // this.$emit('toggle');
+            // if (!this.running) {
+            //     this.showSetwat = true;
+            // }
         },
         transformList() {
             const { listStr } = this;
