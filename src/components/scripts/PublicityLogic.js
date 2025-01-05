@@ -19,7 +19,7 @@ export default {
                 if (result[item] && config[item] > 0) {
                     message.push({
                         key: index + 1,
-                        title: `${label}抽獎结果:`,
+                        title: `${label}抽獎結果:`,
                         value: `${result[item].length > 0 ? result[item].join('、') : '暫未抽出'
                             }`
                     });
