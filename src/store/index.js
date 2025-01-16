@@ -14,10 +14,22 @@ export default new Vuex.Store({
         config: {
             name: '尾牙抽獎',
             number: 70,
-            firstPrize: 1
+            firstPrize: 2,
+            secondPrize: 3,
+            thirdPrize1: 8,
+            thirdPrize2: 1,
+            thirdPrize3: 1,
+            thirdPrize4: 5,
+
         },
         result: {
-            firstPrize: []
+            firstPrize: [],
+            secondPrize: [],
+            thirdPrize1: [],
+            thirdPrize2: [],
+            thirdPrize3: [],
+            thirdPrize4: [],
+
         },
         newLottery: [],
         list: [],
@@ -28,7 +40,18 @@ export default new Vuex.Store({
             state.config = {
                 name: '尾牙抽獎',
                 number: 70,
-                firstPrize: 1
+                firstPrize: 2,
+                secondPrize: 3,
+                thirdPrize1: 8,
+                thirdPrize2: 1,
+                thirdPrize3: 1,
+                thirdPrize4: 5,
+                fourthPrize1: 24,
+                fourthPrize2: 16,
+                fourthPrize3: 1,
+                fourthPrize4: 6,
+                fourthPrize5: 2,
+                fourthPrize6: 1,
             };
             state.newLottery = [];
         },
@@ -40,17 +63,50 @@ export default new Vuex.Store({
         },
         setClearResult(state) {
             state.result = {
-                firstPrize: []
+                firstPrize: [],
+                secondPrize: [],
+                thirdPrize1: [],
+                thirdPrize2: [],
+                thirdPrize3: [],
+                thirdPrize4: [],
+                fourthPrize1: [],
+                fourthPrize2: [],
+                fourthPrize3: [],
+                fourthPrize4: [],
+                fourthPrize5: [],
+                fourthPrize6: [],
             };
         },
         setClearStore(state) {
             state.config = {
                 name: '尾牙抽獎',
                 number: 70,
-                firstPrize: 1
+                firstPrize: 2,
+                secondPrize: 3,
+                thirdPrize1: 8,
+                thirdPrize2: 1,
+                thirdPrize3: 1,
+                thirdPrize4: 5,
+                fourthPrize1: 24,
+                fourthPrize2: 16,
+                fourthPrize3: 1,
+                fourthPrize4: 6,
+                fourthPrize5: 2,
+                fourthPrize6: 1,
             };
             state.result = {
-                firstPrize: []
+                firstPrize: [],
+                secondPrize: [],
+                thirdPrize1: [],
+                thirdPrize2: [],
+                thirdPrize3: [],
+                thirdPrize4: [],
+                fourthPrize1: [],
+                fourthPrize2: [],
+                fourthPrize3: [],
+                fourthPrize4: [],
+                fourthPrize5: [],
+                fourthPrize6: [],
             };
             state.newLottery = [];
             state.list = [];

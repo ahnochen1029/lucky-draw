@@ -47,7 +47,7 @@ export default {
         line-height: 30px;
 
         .name {
-            width: 80px;
+            width: 170px;
             font-weight: bold;
         }
 

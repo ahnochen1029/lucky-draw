@@ -41,7 +41,40 @@ export function conversionCategoryName(key) {
     let name = '';
     switch (key) {
         case 'firstPrize':
-            name = '頭獎';
+            name = '頭獎-現金';
+            break;
+        case 'secondPrize':
+            name = '二獎-現金';
+            break;
+        case 'thirdPrize1':
+            name = '三獎-郵政禮卷';
+            break;
+        case 'thirdPrize2':
+            name = '三獎-遠東百貨禮券';
+            break;
+        case 'thirdPrize3':
+            name = '三獎-SOGO禮卷';
+            break;
+        case 'thirdPrize4':
+            name = '三獎-現金';
+            break;
+        case 'fourthPrize1':
+            name = '四獎-現金';
+            break;
+        case 'fourthPrize2':
+            name = '四獎-郵政禮券';
+            break;
+        case 'fourthPrize3':
+            name = '四獎-Lenovo Tab M10';
+            break;
+        case 'fourthPrize4':
+            name = '四獎-新光三越禮券';
+            break;
+        case 'fourthPrize5':
+            name = '四獎-禮券';
+            break;
+        case 'fourthPrize6':
+            name = '四獎-電熱水瓶';
             break;
         default:
             break;

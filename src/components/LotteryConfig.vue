@@ -20,11 +20,43 @@
                 <el-form-item label="頭獎">
                     <el-input type="number" v-model="form.firstPrize" :min="0" :step="1"></el-input>
                 </el-form-item>
+                <el-form-item label="二獎">
+                    <el-input type="number" v-model="form.secondPrize" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="三獎-郵政禮券">
+                    <el-input type="number" v-model="form.thirdPrize1" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="三獎-遠東百貨禮券">
+                    <el-input type="number" v-model="form.thirdPrize2" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="三獎-SOGO禮卷">
+                    <el-input type="number" v-model="form.thirdPrize3" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="三獎-現金">
+                    <el-input type="number" v-model="form.thirdPrize4" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="四獎-現金">
+                    <el-input type="number" v-model="form.fourthPrize1" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="四獎-郵政禮券">
+                    <el-input type="number" v-model="form.fourthPrize2" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="四獎-Lenovo Tab M10">
+                    <el-input type="number" v-model="form.fourthPrize3" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="四獎-新光三越禮券">
+                    <el-input type="number" v-model="form.fourthPrize4" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="四獎-禮券">
+                    <el-input type="number" v-model="form.fourthPrize5" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="四獎-電熱水瓶">
+                    <el-input type="number" v-model="form.fourthPrize6" :min="0" :step="1"></el-input>
+                </el-form-item>
                 <el-form-item :label="newitem.name" v-for="newitem in storeNewLottery" :key="newitem.key">
                     <el-input type="number" :min="0" :step="1" v-model="form[newitem.key]" @change="val => {
                         form[newitem.key] = Number(val);
-                    }
-                        "></el-input>
+                    }"></el-input>
                 </el-form-item>
             </el-form>
         </div>
