@@ -49,32 +49,47 @@ export function conversionCategoryName(key) {
         case 'thirdPrize1':
             name = '三獎-郵政禮卷';
             break;
-        case 'thirdPrize2':
-            name = '三獎-遠東百貨禮券';
-            break;
-        case 'thirdPrize3':
-            name = '三獎-SOGO禮卷';
-            break;
-        case 'thirdPrize4':
-            name = '三獎-現金';
-            break;
         case 'fourthPrize1':
-            name = '四獎-現金';
+            name = '四獎-遠東百貨禮券';
             break;
         case 'fourthPrize2':
-            name = '四獎-郵政禮券';
+            name = '四獎-SOGO禮券';
             break;
         case 'fourthPrize3':
-            name = '四獎-Lenovo Tab M10';
+            name = '四獎-現金';
             break;
-        case 'fourthPrize4':
-            name = '四獎-新光三越禮券';
+        case 'fifthPrize1':
+            name = '五獎-現金';
             break;
-        case 'fourthPrize5':
-            name = '四獎-禮券';
+        case 'fifthPrize2':
+            name = '五獎-郵政禮券';
             break;
-        case 'fourthPrize6':
-            name = '四獎-電熱水瓶';
+        case 'fifthPrize3':
+            name = '五獎-新光三越禮券';
+            break;
+        case 'fifthPrize4':
+            name = '五獎-Lenovo Tab M10';
+            break;
+        case 'fifthPrize5':
+            name = '五獎-電熱水瓶';
+            break;
+        case 'sixthPrize1':
+            name = '六獎-現金';
+            break;
+        case 'sixthPrize2':
+            name = '六獎-家樂福禮券';
+            break;
+        case 'sixthPrize3':
+            name = '六獎-全聯禮券';
+            break;
+        case 'sixthPrize4':
+            name = '六獎-西堤牛排套餐禮券';
+            break;
+        case 'sixthPrize5':
+            name = '六獎-郵政禮券';
+            break;
+        case 'sixthPrize6':
+            name = '六獎-Edenred';
             break;
         default:
             break;

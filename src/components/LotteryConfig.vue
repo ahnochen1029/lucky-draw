@@ -26,32 +26,47 @@
                 <el-form-item label="三獎-郵政禮券">
                     <el-input type="number" v-model="form.thirdPrize1" :min="0" :step="1"></el-input>
                 </el-form-item>
-                <el-form-item label="三獎-遠東百貨禮券">
-                    <el-input type="number" v-model="form.thirdPrize2" :min="0" :step="1"></el-input>
-                </el-form-item>
-                <el-form-item label="三獎-SOGO禮卷">
-                    <el-input type="number" v-model="form.thirdPrize3" :min="0" :step="1"></el-input>
-                </el-form-item>
-                <el-form-item label="三獎-現金">
-                    <el-input type="number" v-model="form.thirdPrize4" :min="0" :step="1"></el-input>
-                </el-form-item>
-                <el-form-item label="四獎-現金">
+                <el-form-item label="四獎-遠東百貨禮券">
                     <el-input type="number" v-model="form.fourthPrize1" :min="0" :step="1"></el-input>
                 </el-form-item>
-                <el-form-item label="四獎-郵政禮券">
+                <el-form-item label="四獎-SOGO禮卷">
                     <el-input type="number" v-model="form.fourthPrize2" :min="0" :step="1"></el-input>
                 </el-form-item>
-                <el-form-item label="四獎-Lenovo Tab M10">
+                <el-form-item label="四獎-現金">
                     <el-input type="number" v-model="form.fourthPrize3" :min="0" :step="1"></el-input>
                 </el-form-item>
-                <el-form-item label="四獎-新光三越禮券">
-                    <el-input type="number" v-model="form.fourthPrize4" :min="0" :step="1"></el-input>
+                <el-form-item label="五獎-現金">
+                    <el-input type="number" v-model="form.fifthPrize1" :min="0" :step="1"></el-input>
                 </el-form-item>
-                <el-form-item label="四獎-禮券">
-                    <el-input type="number" v-model="form.fourthPrize5" :min="0" :step="1"></el-input>
+                <el-form-item label="五獎-郵政禮券">
+                    <el-input type="number" v-model="form.fifthPrize2" :min="0" :step="1"></el-input>
                 </el-form-item>
-                <el-form-item label="四獎-電熱水瓶">
-                    <el-input type="number" v-model="form.fourthPrize6" :min="0" :step="1"></el-input>
+                <el-form-item label="五獎-新光三越禮券">
+                    <el-input type="number" v-model="form.fifthPrize3" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="五獎-Lenovo Tab M10">
+                    <el-input type="number" v-model="form.fifthPrize4" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="五獎-電熱水瓶">
+                    <el-input type="number" v-model="form.fifthPrize5" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="六獎-現金">
+                    <el-input type="number" v-model="form.sixthPrize1" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="六獎-家樂福禮券">
+                    <el-input type="number" v-model="form.sixthPrize2" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="六獎-全聯禮券">
+                    <el-input type="number" v-model="form.sixthPrize3" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="六獎-西堤牛排套餐禮券">
+                    <el-input type="number" v-model="form.sixthPrize4" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="六獎-郵政禮券">
+                    <el-input type="number" v-model="form.sixthPrize5" :min="0" :step="1"></el-input>
+                </el-form-item>
+                <el-form-item label="六獎-Edenred">
+                    <el-input type="number" v-model="form.sixthPrize6" :min="0" :step="1"></el-input>
                 </el-form-item>
                 <el-form-item :label="newitem.name" v-for="newitem in storeNewLottery" :key="newitem.key">
                     <el-input type="number" :min="0" :step="1" v-model="form[newitem.key]" @change="val => {
